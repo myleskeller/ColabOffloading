@@ -12,10 +12,10 @@ def assign_samples(num_samples):
         # cycles_preferences = preferences.addons["cycles"].preferences
         bpy.context.scene.cycles.samples = num_samples
 
-    else if (bpy.context.scene.render.engine == "BLENDER_EEVEE"):
+    elif (bpy.context.scene.render.engine == "BLENDER_EEVEE"):
         bpy.context.scene.eevee.taa_render_samples = num_samples
         
-    else if (bpy.context.scene.render.engine == "BLENDER_WORKBENCH"):
+    elif (bpy.context.scene.render.engine == "BLENDER_WORKBENCH"):
         bpy.context.scene.render_aa = num_samples
 
     return num_samples
