@@ -7,6 +7,7 @@ argv = argv[argv.index("--") + 1:]  # get all args after "--"
 
 def assign_samples(num_samples):
     preferences = bpy.context.preferences
+    num_samples = int(num_samples) # god forbid we don't cast a string that only contains numbers to an integer...
 
     if (bpy.context.scene.render.engine == "CYCLES"):
         # cycles_preferences = preferences.addons["cycles"].preferences
