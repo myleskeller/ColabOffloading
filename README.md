@@ -2,7 +2,7 @@
 
 A (slowly increasing) collection of `.ipynb` notebooks created or streamlined by me that leverage the **_thicc_** GPU backend of Google Colab.
 
-  * ## BlenderCLI-Colab
+  * ## blenderCLI
   Made to leverage GPU backend of Google Colab in rendering Blender .blend files.  
   Works fine for me as of 23MAR2021.
 
